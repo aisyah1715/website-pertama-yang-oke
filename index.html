@@ -9,8 +9,17 @@
     <div class="container">
         <h1>Selamat Datang di Website Keren!</h1>
         <p id="greeting">Klik tombol di bawah untuk pertanyaan random:</p>
-        <button onclick="tampilkanPertanyaan()">Tanya Aku!</button>
-        <div id="output"></div>
+        <div class="flex-row">
+            <div>
+                <button onclick="tampilkanPertanyaan()">Tanya Aku!</button>
+                <div id="output"></div>
+                <div id="jawabBox" style="display:none;">
+                    <input type="text" id="jawabanInput" placeholder="Tulis jawabanmu...">
+                    <button onclick="kirimJawaban()">Kirim</button>
+                </div>
+            </div>
+            <div id="floatingJawaban"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
